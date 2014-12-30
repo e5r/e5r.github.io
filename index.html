@@ -1,10 +1,258 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-  <meta charset="utf-8">
-  <title>E5R Developer Team</title>
-</head>
-<body>
-  <h1>Seja bem vindo ao site do Time de Desenvolvimento E5R!</h1>
+    <title>E5R Development Team</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E5R Development Team site">
+    <meta name="author" content="E5R Development Team">    
+    <link rel="shortcut icon" href="assets/img/e5r.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles-3.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">//E5R-TEAM</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">Sobre</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Projetos</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#docs">Tutoriais</a></li>                        
+                        <li class="nav-item last"><a class="scrollto" href="#contact">O Time</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <img src="assets/img/e5r-logo-white.png">
+            <p class="intro">Um time de desenvolvimento de softwares comprometido com a solução de problemas de forma inteligente.</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="http://github.com/e5r" target="_blank">GitHub</a>
+                <a class="btn btn-cta-primary" href="https://plus.google.com/communities/117090914575759929852" target="_blank">Google+</a>
+            </div>
+            <ul class="meta list-inline">
+                <li>Faça parte desse time!</li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline">
+                    <li class="twitter-follow"><a href="https://twitter.com/erlimar" class="twitter-follow-button" data-show-count="true">Siga @erlimar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="erlimar" data-hashtags="e5r,e5rteam">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-tweet-->
+                    <li class="github-follow"><iframe src="http://ghbtns.com/github-btn.html?user=erlimar&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe></li>
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+    
+    <!-- ******SOBRE****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">O que é o E5R Development Team?</h2>
+            <p class="intro text-center">É, antes de mais nada, uma iniciativa para reunir um time de desenvolvimento de software que preza pela qualidade não só do produto final, mas também preza pelo processo de desenvolvimento de softwares. A troca de experiências entre os membros do time resultam em especificações de processos, e muitas vezes geram ferramentas que facilitam a vida dos envolvidos no desenvolvimento, e estes viram produtos comerciais, muitos casos com código fonte disponibilizado livremente.</p>
+            <h3 class="title text-center">Premissas</h3>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Estar envolvido</h3>
+                        <p>Não é possível alcançar o objetivo de desenvolver software com qualidade se os que o criam não estão envolvidos com sua história e essência. Estar envolvido significa "amar" o que faz, sentir prazer em buscar soluções para problemas dos outros.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Ser ágil</h3>
+                        <p>O desenvolvimento de software não deve durar tanto tempo, que acabe tornando a solução obsoleta. Fornecer ferramentas e processos que automatizem tudo o que não for "do negócio" deixando o desenvolvedor livre pra criar "a solução", é ser ágil.</p>
+                    </div><!--//content-->
+                </div><!--//item-->                    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Codificar</h3>
+                        <p>O código que faz o software funcionar não deve ser tratado com desprezo, ele deve ser bem trabalhado. Acreditamos que o código é o coração do software, por isso não deve simplesmente funcionar, mas deve <strong>funcionar de forma elegante</strong>.</p>
+                    </div><!--//content-->
+                </div><!--//item-->              
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******PROJETOS****** --> 
+    <section id="features" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="title text-center">Projetos</h2>
+                    <p class="text-center">Conheça algumas de nossas ideias, elas ainda estão sendo construídas e talvez algumas nem sejam finalizadas como estão, mas nós temos o prazer de compartilhar com você essas ideias.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <ul class=" list-group">
+                        <li class="list-group-item">
+                            <span class="badge">funcional</span>
+                            <a href="https://github.com/e5r/env" target="_blank">E5R Environment</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">ideia</span>
+                            <a href="https://github.com/e5r/krunt" target="_blank">Krunt</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">descontinuado</span>
+                            <a href="https://github.com/e5r/E5RInstallvNext" target="_blank">E5R Install vNext</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">ideia</span>
+                            <a href="https://github.com/e5r/aaa-simplesample" target="_blank">AAA Simple Sample</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">funcional</span>
+                            <a href="https://github.com/e5r/miv" target="_blank">E5R MIV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******TUTORIAIS****** --> 
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Tutoriais</h2>
+            <p>Se queremos ser ágeis no desenvolvimento de software, precisamos ter o máximo de conhecimento possível em cada área de atuação, e precisamos nos atualizar cotidianamente. Nós acreditamos que o sucesso é alcançado quando <strong>entregamos</strong> um produto de ótima qualidade, e é isso que deve nos diferenciar dos demais.</p>
+
+            <p>Não acreditamos que guardar o conhecimento seja a melhor forma de nos diferenciarmos no mercado por termos exclusividade em uma ou outra técnica ou algoritmo. Nós compartilhamos o que sabemos porque acreditamos que esse conhecimento será aprimorado por outro alguém e retornará para nós também, contribuindo para o nosso crescimento dessa forma.</p>
+
+            <p>Pensando nisso, nós estamos construindo constantemente materiais de treinamento para nossa própria equipe, e disponibilizamos alguns nas sessões abaixo para contribuir com a comunidade. Fique à vontade para aprender, dê sua opinião, compartilhe conosco também.</p>
+            <div class="block">
+                <h3 class="sub-title text-center">.NET e ASP.NET vNext - Prepare-se para o futuro - preparando o ambiente</h3>
+                <p>Neste vídeo tutorial o autor mostra como você preparar o seu ambiente para desenvolvimento usando a nova plataforma ASP.NET vNext da Microsoft, sem a necessidade de usar o Visual Studio.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Autor:</strong> Erlimar Silva Campos (<a href="https://twitter.com/erlimar" target="_blank">@erlimar</a>)</li>
+                    <li><strong>Web:</strong> <a href="http://goo.gl/xTr3C9">erlimar.wordpress.com</a></li>
+                    <li><strong>Tags:</strong>
+                        <span class="label label-default">C#</span>
+                        <span class="label label-default">.NET</span>
+                        <span class="label label-default">ASP.NET</span>
+                        <span class="label label-default">Microsoft</span>
+                        <span class="label label-default">Atom</span>
+                        <span class="label label-default">Git</span>
+                        <span class="label label-default">kpm</span>
+                        <span class="label label-default">kvm</span>
+                        <span class="label label-default">k</span>
+                        <span class="label label-default">klr</span>
+                    </li>
+                </ul>
+            </div><!--//block-->
+            
+            <div class="block">
+                <h3 class="sub-title text-center">E5R Learning and Training</h3>
+                <p>Como levamos a sério essa questão de compartilhar o conhecimento, criamos um canal especificamente para isso. Passe por lá e dê uma olhada no que tem disponível</p>
+                <p class="text-center">
+                    <a class="btn btn-cta-primary" href="https://github.com/e5r-learning" target="_blank">E5R Learning</a>
+                </p>
+            </div><!--//block-->
+            
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******CONTATO****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">O Time</h2>
+                <p class="intro  text-center">Se quiser falar conosco é simples: estamos no <strong><a href="https://gitter.im/e5r" target="_blank">Gitter</a></strong>, é só escolher o projeto e interagir. Acredite, somos pessoas <strong>normais</strong>...</p>
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-responsive" src="assets/img/erlimar_profile.png" alt="" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Erlimar Silva Campos</h3>
+                        <p>Quem saber mais sobre o que faço no dia-a-dia, siga-me em <a href="https://twitter.com/erlimar" target="_blank">@erlimar</a> 
+                        <p>Sou programador à cerca de 13 anos, programo em C/C++/C#, Delphi, PHP, Python e JavaScript. Na verdade em algumas outras linguagens, mas essas são as que mais gosto!</p>
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-responsive" src="assets/img/you_profile.png" alt="" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Você</h3>
+                        <p>Já imaginou você aqui?</p>
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Design adaptado de <a href="http://themes.3rdwavemedia.com/website-templates/devaid-free-bootstrap-theme-developers/" target="_blank">DEVAID - Free Bootstrap Theme for Developers</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/js/prism.js"></script>    
+    <script type="text/javascript" src="assets/js/main.js"></script>       
 </body>
-</html>
+</html> 
+
